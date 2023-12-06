@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: fit-content;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+}
+
+
+/*SCROLLBAR*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #3B454E;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #5d6974;
+}
+
+
+/*NAV-BAR*/
+
+.spacer-nav {
+    width: 100%;
+    height: 150px;
+}
+
+.nav-bar {
+    position: fixed;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 150px;
+    z-index: 10;
+    background-color: #fff;
+}
+
+.nav-bar img {
+    width: 150px;
+}
+
+.nav-img {
+    width: 55%;
+    padding-left: 75px;
+}
+
+.scroll {
+    color: #3B454E;
+    transition: all .5s ease;
+}
+
+.nav-links {
+    display: flex;
+    align-content: flex-start;
+    gap: 50px;
+    align-self: center;
+    color: #9CA1A5
+}
+
+.nav-color {
+    color: #9CA1A5;
+    transition: all 0.5ms ease;
+}
+
+.nav-links h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-links li {
+    list-style-type: none;
+}
+
+
+/*
+FIM NAV-BAR
+INICIO HERO
+*/
+
+#hero {
+    position: relative;
+    height: 800px;
+    display: flex;
+}
+
+.hero-left {
+    width: 40%;
+    margin-left: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.spacer {
+    width: 100%;
+    height: 20%;
+}
+
+.title {
+    width: 62%;
+    height: 35%;
+}
+
+.title h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    text-align: center;
+    color: #3B454E;
+}
+
+.subtitle {
+    width: 60%;
+    height: 10%;
+    color: #3B454E;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    text-align: center;
+}
+
+.hero-right {
+    width: 50%;
+    left: 10%;
+    height: 100%;
+    background-image: url("../img/iceberg.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/*
+FIM HERO
+INICIO INTRO
+*/
+
+.intro {
+    position: relative;
+    height: 700px;
+    width: 100%;
+    background-color: #3D9F76;
+    width: 100%;
+    display: flex;
+    gap: 200px;
+    align-content: center;
+}
+
+.solucoes {
+    position: relative;
+    height: 700px;
+    width: 100%;
+    background-color: #005073;
+    width: 100%;
+    display: flex;
+    align-content: center;
+}
+
+.intro-left {
+    position: relative;
+    left: 5%;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.intro-lefttop {
+    position: relative;
+    width: 50%;
+    height: 30%;
+    left: 25%;
+    margin-top: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    color: #CFFFD4;
+}
+
+.solu-lefttop {
+    position: relative;
+    width: 50%;
+    height: 30%;
+    left: 25%;
+    margin-top: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    color: #71C7EC;
+}
+
+.intro-leftbot {
+    position: relative;
+    width: 85%;
+    left: 8%;
+    margin-top: 20px;
+    height: 70%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #DBFFEB;
+}
+
+.solu-leftbot {
+    position: relative;
+    width: 85%;
+    left: 8%;
+    margin-top: 20px;
+    height: 70%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #D2F2FF;
+}
+
+.solu-leftbot p {
+    font-weight: 400;
+}
+
+.intro-leftbot p {
+    font-weight: 400;
+}
+
+.intro-right {
+    width: 25%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position-y: center;
+    background-image: url("../img/melting.png");
+}
+
+.solu-right {
+    position: relative;
+    left: 10%;
+    width: 30%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position-y: center;
+    background-image: url("../img/polar-bear 2.png");
+}
+
+
+/*
+FIM INTRO
+INICIO CAUSAS
+*/
+
+.causastitle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 30%;
+    left: 35%;
+    height: 300px;
+}
+
+.causastop {
+    height: 150px;
+    width: 100%;
+}
+
+.causasbot {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #F59E7B;
+}
+
+.wrapper-causas-card {
+    position: relative;
+    height: 500px;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+}
+
+.causas-card {
+    position: relative;
+    width: 320px;
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: 0px 9px 26px 6px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    transition: all .5s ease;
+}
+
+.causas-card:hover {
+    transform: translate3D(0, -1px, 0) scale(1.03);
+    transition: all .4s ease;
+}
+
+.card-top {
+    position: inherit;
+    width: 100%;
+    height: 60%;
+    border-radius: 15px 15px 0px 0px;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+#card-desm {
+    background-image: url("../img/deforestation.png");
+}
+
+#card-comb {
+    background-image: url("../img/fossil-fuel.png");
+}
+
+#card-hidr {
+    background-image: url("../img/marine-debris.png");
+}
+
+#card-cat {
+    background-image: url("../img/tsunami.png");
+}
+
+#card-des {
+    background-image: url("../img/drought.png");
+}
+
+#card-que {
+    background-image: url("../img/forest.png");
+}
+
+#botcard-one {
+    margin-top: 20px;
+}
+
+#botcard-two {
+    margin-bottom: 25px;
+}
+
+.card-bot {
+    position: inherit;
+    width: 100%;
+    height: 40%;
+    border-radius: 0px 0px 15px 15px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #F59E7B;
+}
+
+.card-boto {
+    position: inherit;
+    width: 100%;
+    height: 40%;
+    border-radius: 0px 0px 15px 15px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #F57B7B;
+}
+
+.causas-dados {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    gap: 150px;
+}
+
+.dados-left {
+    position: inherit;
+    width: 50%;
+    margin-top: 50px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sep-dados {
+    height: 65px;
+}
+
+.orange {
+    color: #F59E7B;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.red {
+    color: #F57B7B;
+    font-size: 38px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+
+.dados-right {
+    position: inherit;
+    width: 50%;
+    height: 100%;
+    background-image: url("../img/co2emission.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/*fim causas
+inicio consequencias*/
+
+.consebot {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #F57B7B;
+}
+
+.wrapper-conseq {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+}
+
+.row-conseq {
+    position: relative;
+    width: 60%;
+    left: 20%;
+    height: 200px;
+    display: flex;
+    gap: 25px;
+}
+
+.conseq-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    color: #3B454E;
+}
+
+footer {
+    width: 100%;
+    height: 400px;
+    bottom: 0;
+    background-color: #003E59;
+    display: flex;
+    gap: 180px;
+}
+
+.flogo {
+    position: relative;
+    width: 20%;
+    height: 100%;
+    left: 5%;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position-y: center;
+    background-image: url("../img/onu-logo.png");
+}
+
+.fsessoes {
+    position: relative;
+    width: 15%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+}
+
+.fsessoes h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 28px;
+}
+
+.fsessoes h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.fsessoes a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sessoes {
+    height: 40px;
+}
+
+.fredesup {
+    height: 95%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.fredesup h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.redes-spacer {
+    height: 50px;
+}
+
+.fredesup {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: white;
+    margin-top: 20px;
+}
+
+.redes-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.redes-icons img {
+    width: 40px;
+}
+
+.fgrupo {
+    margin-top: 120px;
+    width: 20%;
+    height: fit-content;
+    right: 0px;
+}
+
+.fgrupo h2 {
+    font-family: 'Abel', sans-serif;
+    font-size: 50px;
+    color: white;
+}
+
+@media only screen and (max-width: 1366px) {
+    #top {
+        height: 125px;
+    }
+    .nav-bar {
+        height: 125px;
+    }
+    .nav-bar img {
+        width: 125px;
+        padding: 5px;
+    }
+    .nav-img {
+        width: 45%;
+    }
+    .nav-links {
+        width: 40%;
+        gap: 30px;
+    }
+    #hero {
+        height: 600px;
+    }
+    .spacer {
+        height: 10%;
+    }
+    .title {
+        width: 100%;
+        height: 40%;
+    }
+    .title h1 {
+        font-size: 52px;
+    }
+    .subtitle {
+        height: 10%;
+        width: 100%;
+    }
+    .hero-right {
+        height: 80%;
+        background-position-x: 20%;
+    }
+    #mid {
+        height: 0;
+    }
+    .intro {
+        height: 550px;
+        gap: 150px;
+    }
+    .intro-lefttop {
+        left: 10%;
+        width: 80%;
+        font-size: 28px;
+    }
+    .intro-leftbot {
+        width: 100%;
+        left: 0;
+        font-size: 18px;
+    }
+    .causastitle {
+        width: 50%;
+        left: 25%;
+    }
+    .dados-left {
+        margin-top: 0;
+    }
+    .sep-dados {
+        height: 60px;
+    }
+    .row-conseq {
+        width: 80%;
+        left: 10%;
+    }
+    .solu-lefttop {
+        left: 10%;
+        width: 80%;
+        font-size: 28px;
+    }
+}
